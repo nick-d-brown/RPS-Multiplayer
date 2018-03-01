@@ -1,0 +1,73 @@
+body {
+
+}
+
+.container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.jumbotron-styling {
+    text-align: center;
+
+}
+
+.displayname-row {
+    padding: 5px;
+    margin: 5px;
+    max-width: 275px;
+    display: flex;
+    align-self: center; 
+}
+
+.playingfield-row {
+    padding: 5px;
+    margin: 0px;    
+}
+
+.arena-boxes {
+    width: 30%;
+    height: 350px;
+    border: 2px solid red;
+    margin: 5px;
+}
+
+.player1-box {
+
+}
+
+.playingfield-box {
+
+}
+
+.player2-box {
+
+}
+
+.chatroom-row {
+    padding: 5px;
+    margin: 5px; 
+    display: flex;
+    align-self: center; 
+    max-width: 600px;
+
+}
+
+.chatroom-style {
+    background-color: whitesmoke;
+    border: 2px solid black;
+    max-width: 600px;
+    height: 350px;
+   
+}
+
+.chatroom-input-row {
+     padding: 5px;
+    margin: 5px; 
+    display: flex;
+    align-self: center; 
+}
+
