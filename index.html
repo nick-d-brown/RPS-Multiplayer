@@ -5,29 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>2 Player Rock Paper Scissors</title>
+
+    <!-- Link to bootstrap -->
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Link to Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
 </head>
 <body>
     <div class="jumbotron jumbotron-styling">
         <h1>Rock Paper Scissors</h1>
     </div>
     <div class="container">
-        <div class="row displayname-row">
+        <div id="announcementsBoard"></div>
+        <div id="playerTurnAnnouncements"></div>
+        <div class="row displayname-row" id="displayNameRow">
             <div class="col-md-12">
                 <form class="form-inline">
                     <div class="form-group">
                         <label for="userDisplayName" class="sr-only">Display Name:</label>
                         <input type="text" class="form-control" id="userDisplayName" placeholder="type display name here">
                     </div>
-                    <button type="submit" class="btn btn-primary">Start</button>
+                    <button type="submit" class="btn btn-primary" id="initializePlayer">Start</button>
                 </form>
             </div>
         </div>
         <div class="row playingfield-row">
-            <div class="col-md-4 arena-boxes player1-box">Waiting for Player 1</div>
+            <div class="col-md-4 arena-boxes player1-box" id="player1Box">Waiting for Player 1</div>
             <div class="col-md-4 arena-boxes playingfield-box"></div>
-            <div class="col-md-4 arena-boxes player2-box">Waiting for Player 2</div>
+            <div class="col-md-4 arena-boxes player2-box" id="player2Box">Waiting for Player 2</div>
         </div>
         <div class="row chatroom-row">
             <div class="col-md-8 chatroom-style">
@@ -39,15 +47,18 @@
                 <form class="form-inline">
                     <div class="form-group">
                         <label for="userChatMessage" class="sr-only">Chatroom Message</label>
-                        <input type="text" class="form-control" id="userChatMessage" placeholder="type message here">
+                        <textarea class="form-control" rows="5" id="userChatMessage" placeholder="type message here"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Start</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </div>
     </div>
+    <!-- Link to jQuery -->
     <script src="./assets/jquery-3.3.1.min.js"></script>
+    <!-- Link to Bootstrap JS library -->
     <script src="./assets/bootstrap.min.js"></script>
+    <!-- Link to JavaScript file -->
     <script src="./assets/logic.js"></script>
     </body>
 </html>
